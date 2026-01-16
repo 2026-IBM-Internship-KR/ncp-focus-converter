@@ -1,4 +1,4 @@
-# NCP to FOCUS v1.1 Mapping Table
+# 📊 NCP to FOCUS v1.1 Mapping Table
 
 | 상태 | FOCUS | NCP | FOCUS 형태 예시 | 데이터 타입 | 비고 |
 |:---|:---|:---|:---|:---|:---|
@@ -23,3 +23,7 @@
 | 검토 필요 | InvoiceIssuerName | "NAVER Cloud” | "NAVER Cloud” | String | 고정값 |
 | 검토 필요 | ServiceCategory | ```getContractUsageListByDaily``` - contractProduct > productItemKind.codeName | (Compute, Storage) | String | 서비스 대분류는 상품의 속성이므로 contractProduct에서 가져오며, 구체적인 서비스 명칭은 contract에서 가져오는 것이 적절함. |
 | 검토 필요 | ServiceName | ```getContractUsageListByDaily``` - contract > contractType.codeName | "VPC (Virtual Private Cloud)” | String | - |
+
+---
+*Last Updated: 2026-01-16* </br>
+*Author: Jaewon Kim*
