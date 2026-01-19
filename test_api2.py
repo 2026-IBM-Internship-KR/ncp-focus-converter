@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
     # billing_with_period = add_period_and_account_info(raw_billing)
     # 2) 일별 Usage (예: 1~14일)
-    usage_json = call_get_contract_usage_by_daily("20260101", "20260116")
+    usage_json = call_get_contract_usage_by_daily("20260101", "20260119")
 
     # 3) 하나의 JSON으로 합치기
     merged = {
