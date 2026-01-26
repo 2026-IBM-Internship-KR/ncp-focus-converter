@@ -11,6 +11,8 @@ NCP(Naver Cloud Platform)
 Due to significant discrepancies between NCP's billing API column formats and the FOCUS schema, we analyzed the billing dataset to map NCP values to the corresponding FOCUS columns. The following table describes the mandatory FOCUS columns, mapped using the JSON response fields retrieved from the NCP Billing API.
 
 ※[Note] Mapping Strategy※
+
+
 Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
 
 ### BillingAccountId
