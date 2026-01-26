@@ -18,6 +18,8 @@ Since explicit definitions for NCP's billing API fields are unavailable, we infe
 | --- | --- | --- | --- | --- |
 |FOCUS|BillingAccountId|1234567|String|BillingAccountId is the identifier for the account that being charged.|
 |NCP|memberNo|3649505|String|memberNo is also the identifier for the account that being charged.|
+
+
 Mapped NCP's memberNo to FOCUS's BillingAccountId as both fields function as the unique identifier for the account.
 
 ### BIllingAccountName
@@ -25,6 +27,8 @@ Mapped NCP's memberNo to FOCUS's BillingAccountId as both fields function as the
 | --- | --- | --- | --- | --- |
 |FOCUS|BillingAccountName|'Mir Lee'|String|Display name that associates with the billing account|
 |NCP| - | - | - |No corresponding value exists in the source data.|
+
+
 Since the source data lacks corresponding values, we could not directly map this column. Instead, we applied a static value to ensure the CSV clearly identifies the billing account associate.
 
 ### BillingCurrency
@@ -32,6 +36,8 @@ Since the source data lacks corresponding values, we could not directly map this
 | --- | --- | --- | --- | --- |
 |FOCUS|BillingCurrency|USD|String|Currency Code for the billing data|
 |NCP|payCurrency(code)|KRW|String|Also Currency Code for the billing data|
+
+
 In the NCP billing JSON structure, currency information is provided within the payCurrency object. We extracted the corresponding value from this field to map BillingCurrency.
 
 ### BillingPeriodStart
