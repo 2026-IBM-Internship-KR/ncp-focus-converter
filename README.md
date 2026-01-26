@@ -100,7 +100,7 @@ Map NCP's totalDemandAmount (final adjusted amount) to EffectiveCost.
 ||Key|Value(Example)|DataType|Description|
 | --- | --- | --- | --- | --- |
 |FOCUS|ChargeCategory|GEN|String|The high-level category of the charge.|
-|NCP|demandAttribute(code)|String|Identify the nature of the bill.|
+|NCP|demandAttribute(code)|General|String|Identify the nature of the bill.|
 
 
 Map NCP attribute codes to FOCUS categories.
