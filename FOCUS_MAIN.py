@@ -13,8 +13,8 @@ from datetime import datetime
 import uuid
 
 # 변수 입력
-AWS_ACCESS_KEY_ID = "AKIARGZ7KIP7MB4T7MZ6"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = "*"
+AWS_SECRET_ACCESS_KEY = "*"
 AWS_DEFAULT_REGION = "ap-northeast-2"
 AWS_BUCKET_NAME = "ncp-cost-data-jonghun1"
 focus_startmonth = "202601"

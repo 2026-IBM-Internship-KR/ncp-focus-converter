@@ -8,8 +8,8 @@ from typing import Dict, Any
 
 
 # ===== 0. 설정 =====
-NCP_ACCESS_KEY = "ncp_iam_BPAMKR2VP4dIe3b9D7yV"
-NCP_SECRET_KEY = "ncp_iam_BPKMKR69PEH6WMCa2OjXuuMDgt15Qqc0uf"
+NCP_ACCESS_KEY = "*"
+NCP_SECRET_KEY = "*"
 
 # 0-1. memberNo -> BillingAccountName 매핑
 ACCOUNT_NAME_MAP = {
