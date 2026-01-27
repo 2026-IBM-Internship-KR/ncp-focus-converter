@@ -3,9 +3,10 @@
 ## Table of Contents
 [Description](#description)<br/>
 [NCP Column Information](#ncp-column-information)<br/>
+[Converting Solution](#converting-solution)<br/>
 
 ## Description
-NCP(Naver Cloud Platform)
+Naver Cloud Platform (NCP) is a cloud platform provided by Naver, a tech company based in Korea. Our primary goal is to fetch billing data from NCP's Billing API, convert it into the FOCUS format, and save it as a CSV file. Furthermore, our secondary goal is to upload the converted CSV to IBM Cloudability—IBM's cloud cost management and optimization service—to verify if the data works correctly.
 
 ## NCP Column Information
 Due to significant discrepancies between NCP's billing API column formats and the FOCUS schema, we analyzed the billing dataset to map NCP values to the corresponding FOCUS columns. The following table describes the mandatory FOCUS columns, mapped using the JSON response fields retrieved from the NCP Billing API.
@@ -203,3 +204,6 @@ Extract category information from the contractProduct path.
 
 
 Extract the actual service name from the contract path. 
+
+
+## Converting Solution
