@@ -239,8 +239,30 @@ def get_account_name(member_no: str) -> str:
     return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
 
+#### C. Convert JSON to FOCUS format CSV
+>To convert JSON to FOCUS format CSV, importing pandas and json package is necessary.
 
-#### C. Convert API to FOCUS format CSV
+
+```python
+import pandas as pd
+import json
+```
+
+Import JSON data
+
+```python
+with open(filename, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+```
+
+Since some data required normalization, added code to normalize it.
+
+```python
+# Example
+billing_list = data['billing']['getDemandCostListResponse']['demandCostList']
+df_billing = pd.json_normalize(billing_list)
+```
+
 #### D. Upload on AWS S3
 #### E. Construct Automatic Pipeline
 #### F. Test on Cloudability
