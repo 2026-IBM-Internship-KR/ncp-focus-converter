@@ -203,7 +203,7 @@ Extract category information from the contractProduct path.
 |NCP|contractType(codeName)|VPC(VirtualCloud)|String|The specific name of the service or offering consumed.|
 
 
-Extract the actual service name from the contract path. 
+>Extract the actual service name from the contract path. 
 
 
 ## Converting Solution
