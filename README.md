@@ -203,7 +203,7 @@ Extract category information from the contractProduct path.
 |NCP|contractType(codeName)|VPC(VirtualCloud)|String|The specific name of the service or offering consumed.|
 
 
->Extract the actual service name from the contract path. 
+Extract the actual service name from the contract path. 
 
 
 ## Converting Solution
@@ -211,6 +211,20 @@ Extract category information from the contractProduct path.
 #### A. Mapping NCP Column to FOCUS format
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
 #### B. Requesting data from API
+>Retrieves billing data via the NCP Billing API and exports it to JSON and XMP formats. 
+
+Static values are injected into the code to account for specific data fields that are not provided by the API.
+
+
+```
+ACCOUNT_NAME_MAP = {
+    "3649505":"Mir Lee",
+    # Add keys and values of users if needed
+    # ex) "1234567":"NCP-prod-account"
+}
+```
+
+
 #### C. Convert API to FOCUS format CSV
 #### D. Upload on AWS S3
 #### E. Construct Automatic Pipeline
