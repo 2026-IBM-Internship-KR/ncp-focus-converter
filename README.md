@@ -209,9 +209,9 @@ Extract the actual service name from the contract path.
 ## Converting Solution
 ### Key Steps
 #### A. Mapping NCP Column to FOCUS format
-Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
->#### B. Requesting data from API
->#### C. Convert API to FOCUS format CSV
->#### D. Upload on AWS S3
->#### E. Construct Automatic Pipeline
->#### F. Test on Cloudability
+>Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
+#### B. Requesting data from API
+#### C. Convert API to FOCUS format CSV
+#### D. Upload on AWS S3
+#### E. Construct Automatic Pipeline
+#### F. Test on Cloudability
