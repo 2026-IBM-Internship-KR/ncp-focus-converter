@@ -220,8 +220,23 @@ Static values are injected into the code to account for specific data fields tha
 ACCOUNT_NAME_MAP = {
     "3649505":"Mir Lee",
     # Add keys and values of users if needed
-    # ex) "1234567":"NCP-prod-account"
+    # ex) "1234567":"Account Name"
 }
+```
+
+The 'Account Name' can be manually injected into the dictionary as a static value.
+
+```python
+PROVIDER_NAME = "Naver Cloud Platform"
+INVOICE_ISSUER_NAME = "NAVER Cloud Corp."
+PUBLISHER_NAME = "NAVER Cloud Platform"
+```
+
+Added name values as a static value.
+
+```python
+def get_account_name(member_no: str) -> str:
+    return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
 
 
