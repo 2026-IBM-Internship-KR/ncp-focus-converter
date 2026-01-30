@@ -263,6 +263,22 @@ billing_list = data['billing']['getDemandCostListResponse']['demandCostList']
 df_billing = pd.json_normalize(billing_list)
 ```
 
+As a final step, use to_csv to convert the JSON file to CSV format.
+
+```python
+map_list = [
+    'BillingAccountId',
+    'BillingAccountName',
+    ...
+]
+
+df = df[map_list]
+df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
+```
+
 #### D. Upload on AWS S3
+
+
+
 #### E. Construct Automatic Pipeline
 #### F. Test on Cloudability
