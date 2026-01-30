@@ -208,9 +208,9 @@ Extract the actual service name from the contract path.
 
 ## Converting Solution
 ### Key Steps
-#### A. Mapping NCP Column to FOCUS format
+#### **A. Mapping NCP Column to FOCUS format**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
-#### B. Requesting data from API
+#### **B. Requesting data from API**
 >Retrieves billing data via the NCP Billing API and exports it to JSON and XMP formats. 
 
 Static values are injected into the code to account for specific data fields that are not provided by the API.
@@ -239,7 +239,7 @@ def get_account_name(member_no: str) -> str:
     return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
 
-#### C. Convert JSON to FOCUS format CSV
+#### **C. Convert JSON to FOCUS format CSV(ETL)**
 >To convert JSON to FOCUS format CSV, importing pandas and json package is necessary.
 
 
@@ -276,7 +276,7 @@ df = df[map_list]
 df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
 ```
 
-#### D. Upload on AWS S3
+#### **D. Upload on AWS S3**
 >Upload the converted CSV file to the AWS S3 bucket using Python to achieve the primary goal of migrating the NCP billing dataset.
 
 
@@ -327,5 +327,47 @@ json_str = json.dumps(manifest, indent=2, ensure_ascii=False)
 client.put_object(Bucket=AWS_BUCKET_NAME, Key=manifest_s3_path, Body=json_str)
 ```
 
-#### E. Construct Automatic Pipeline
-#### F. Test on Cloudability
+#### **E. Construct Pipeline**
+>This pipeline is designed to streamline the conversion, storage, and analysis of billing data.
+
+Encapsulated the column renaming and CSV conversion logic in etl.py into a single function.
+
+```python
+def cenvert_focus(filename):
+    with open(filename, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    billing_list = data['billing']['getDemandCostListResponse']['demandCostList']
+    ...
+```
+
+Import encapsulated functions(including test_api2.py) into the main Python script.
+
+```python
+import etl
+import test_api2
+...
+```
+
+The pipeline generates both raw data and the FOCUS-converted CSV in a single line of code using encapsulated functions.
+
+```python
+test_api2.rawdata(focus_startmonth,focus_endmonth,focus_startdate, focus_enddate)
+etl.cenvert_focus('raw_ncp_data.json')
+```
+
+Upload both the converted dataset and raw data file to AWS S3.
+
+```python
+# raw data upload
+json_s3_path = f"raw/{filenamemonth}/raw_ncp_data.json"
+client.upload_file('raw_ncp_data.json',AWS_BUCKET_NAME,json_s3_path)
+
+# processed data(FOCUS converted csv) upload
+csv_s3_path = f"processed/{filenamemonth}/ncp_focus_format.csv"
+client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
+```
+
+The pipeline concludes by uploading manifest file to AWS S3.
+
+#### **F. Test on Cloudability**
