@@ -214,6 +214,7 @@ Extract the actual service name from the contract path.
 [D. Upload to AWS S3](#D-Upload-to-AWS-S3)<br/>
 [E. Construct Pipeline](#E-Construct-Pipeline)<br/>
 [F. Test on Cloudability](#F-Test-on-Cloudability)<br/>
+-------------------------------------------------------------------
 #### **A. Mapping NCP Column to FOCUS format**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
 #### **B. Requesting data from API**
