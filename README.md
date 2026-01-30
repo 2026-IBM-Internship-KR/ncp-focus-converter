@@ -217,6 +217,7 @@ Extract the actual service name from the contract path.
 * * *
 #### **A. Mapping NCP Column to FOCUS format**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
+* * *
 #### **B. Requesting data from API**
 >Retrieves billing data via the NCP Billing API and exports it to JSON and XMP formats. 
 
@@ -245,7 +246,7 @@ Added name values as a static value.
 def get_account_name(member_no: str) -> str:
     return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
-
+* * *
 #### **C. Convert JSON to FOCUS format CSV(ETL)**
 >To convert JSON to FOCUS format CSV, importing pandas and json package is necessary.
 
@@ -282,7 +283,7 @@ map_list = [
 df = df[map_list]
 df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
 ```
-
+* * *
 #### **D. Upload to AWS S3**
 >Upload the converted CSV file to the AWS S3 bucket using Python to achieve the primary goal of migrating the NCP billing dataset.
 
@@ -333,7 +334,7 @@ manifest_s3_path = f"manifests/{filenamemonth}/Manifest.json"
 json_str = json.dumps(manifest, indent=2, ensure_ascii=False)
 client.put_object(Bucket=AWS_BUCKET_NAME, Key=manifest_s3_path, Body=json_str)
 ```
-
+* * *
 #### **E. Construct Pipeline**
 >This pipeline is designed to streamline the conversion, storage, and analysis of billing data.
 
@@ -376,5 +377,5 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 ```
 
 The pipeline concludes by uploading manifest file to AWS S3.
-
+* * *
 #### **F. Test on Cloudability**
