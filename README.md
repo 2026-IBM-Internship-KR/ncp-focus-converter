@@ -209,6 +209,11 @@ Extract the actual service name from the contract path.
 ## Converting Solution
 ### Key Steps
 [A. Mapping NCP Column to FOCUS format](#A-Mapping-NCP-Column-to-FOCUS-format)<br/>
+[B. Requesting data from API](#B-Requesting-data-from-API)<br/>
+[C. Convert JSON to FOCUS format CSV(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL))<br/>
+[D. Upload to AWS S3](#D-Upload-to-AWS-S3)<br/>
+[E. Construct Pipeline](#E-Construct-Pipeline)<br/>
+[F. Test on Cloudability](#F-Test-on-Cloudability)<br/>
 #### **A. Mapping NCP Column to FOCUS format**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
 #### **B. Requesting data from API**
@@ -277,7 +282,7 @@ df = df[map_list]
 df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
 ```
 
-#### **D. Upload on AWS S3**
+#### **D. Upload to AWS S3**
 >Upload the converted CSV file to the AWS S3 bucket using Python to achieve the primary goal of migrating the NCP billing dataset.
 
 
