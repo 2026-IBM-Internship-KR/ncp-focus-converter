@@ -277,8 +277,55 @@ df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
 ```
 
 #### D. Upload on AWS S3
+>Upload the converted CSV file to the AWS S3 bucket using Python to achieve the primary goal of migrating the NCP billing dataset.
 
 
+To upload files to AWS S3 using Python, you must import boto3, the standard AWS SDK for Python.
+
+```python
+import boto3
+...
+client = boto3.client('s3',
+                      aws_access_key_id=AWS_ACCESS_KEY_ID,
+                      aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+                      region_name=AWS_DEFAULT_REGION
+                      )
+
+session = boto3.Session(
+                      aws_access_key_id=AWS_ACCESS_KEY_ID,
+                      aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+                      region_name=AWS_DEFAULT_REGION
+                      )
+```
+
+Upload processed data to AWS bucket.
+
+```python
+client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
+```
+
+Generates a metadata manifest to prepare for future Cloudability integration, ensuring the system is ready for automated ingestion.
+
+```python
+manifest = {
+    "compression":"gzip",
+    "content_Type":"CSV",
+    "report_id":str(uuid.uuid4()),
+    "root_dir":AWS_BUCKET_NAME,
+    "all_report_keys":[csv_s3_path],
+    "updated_at":datetime.utcnow().isoformat()+"Z",
+    "focus_version":"1.0"
+}
+```
+
+
+Upload Manifest.json to AWS S3
+
+```python
+manifest_s3_path = f"manifests/{filenamemonth}/Manifest.json"
+json_str = json.dumps(manifest, indent=2, ensure_ascii=False)
+client.put_object(Bucket=AWS_BUCKET_NAME, Key=manifest_s3_path, Body=json_str)
+```
 
 #### E. Construct Automatic Pipeline
 #### F. Test on Cloudability
