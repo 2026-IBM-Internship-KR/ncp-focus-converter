@@ -1,0 +1,4076 @@
+{
+  "metaPeriodInfo": {
+    "demandMonth": "202601",
+    "writeDate": "2026-01-22T08:24:28+0900",
+    "paidUpDate": "2026-01-22T08:46:24+0900",
+    "useAmount": 24990,
+    "creditDiscountAmount": 24990
+  },
+  "billingAccount": {
+    "BillingAccountId": "3649505",
+    "BillingAccountName": "Mir Lee"
+  },
+  "billing": {
+    "getDemandCostListResponse": {
+      "totalRows": 1,
+      "demandCostList": [
+        {
+          "memberNo": "3649505",
+          "demandMonth": "202601",
+          "demandNo": "161139277",
+          "integrationDemandNo": "",
+          "demandAttribute": {
+            "code": "GEN",
+            "codeName": "General"
+          },
+          "useAmount": 24990,
+          "promiseDiscountAmount": 0,
+          "promotionDiscountAmount": 0,
+          "etcDiscountAmount": 0,
+          "customerDiscountAmount": 0,
+          "productDiscountAmount": 0,
+          "creditDiscountAmount": 24990,
+          "rounddownDiscountAmount": 0,
+          "currencyDiscountAmount": 0,
+          "coinUseAmount": 0,
+          "defaultAmount": 0,
+          "thisMonthDemandAmount": 0,
+          "thisMonthVatRatio": 0.1,
+          "thisMonthVatAmount": 0,
+          "thisMonthAmountIncludingVat": 0,
+          "totalDemandAmount": 0,
+          "isPaidUp": true,
+          "paidUpDate": "2026-01-22T08:46:24+0900",
+          "overduePlusAmount": 0,
+          "overdueRatio": 0.0,
+          "thisMonthOverdueAmount": 0,
+          "beforeMonthDemandNo": "",
+          "totalOverdueAmount": 0,
+          "writeDate": "2026-01-22T08:24:28+0900",
+          "memberPriceDiscountAmount": 0,
+          "memberPromiseDiscountAddAmount": 0,
+          "payCurrency": {
+            "code": "KRW",
+            "codeName": "South Korea Won"
+          },
+          "thisMonthAppliedExchangeRate": 1
+        }
+      ],
+      "requestId": "02f9ebea-0af6-4969-acb7-d31a429be97b",
+      "returnCode": "0",
+      "returnMessage": "success"
+    }
+  },
+  "usageDaily": {
+    "getContractUsageListByDailyResponse": {
+      "totalRows": 58,
+      "contractUsageListByDaily": [
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 46264,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 12.851112,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 44991,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 12.4975,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 24996,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 6.943334,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVRT",
+              "codeName": "Server (VPC) Stop Usage"
+            },
+            "usageQuantity": 11999,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 3.333056,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 36994,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 10.276112,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 1235000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.001151,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SWST",
+              "codeName": "Software OS License Stop Usage"
+            },
+            "usageQuantity": 11999,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 3.333056,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 24996,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 6.943334,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-14T00:00:00+0900",
+            "useEndDate": "2026-01-14T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 36988,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 10.274445,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 4947000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.004608,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-15T00:00:00+0900",
+            "useEndDate": "2026-01-15T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 3964000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.003692,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-16T00:00:00+0900",
+            "useEndDate": "2026-01-16T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 4266000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.003974,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-17T00:00:00+0900",
+            "useEndDate": "2026-01-17T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 6296000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.005864,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-18T00:00:00+0900",
+            "useEndDate": "2026-01-18T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 7103000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.006616,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-19T00:00:00+0900",
+            "useEndDate": "2026-01-19T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 3716000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.003461,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-20T00:00:00+0900",
+            "useEndDate": "2026-01-20T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911485",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:08:56+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "VPC (Virtual Private Cloud)",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "VPC.V001",
+            "priceNo": "20978",
+            "promiseNo": "",
+            "instanceNo": "119943215",
+            "productItemKind": {
+              "code": "VPC",
+              "codeName": "VPC (Virtual Private Cloud)"
+            },
+            "productRatingType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:08:56+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VPC_MAINTENANCE",
+              "codeName": "VPC Maintenance"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21911676",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T11:30:02+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "223.130.138.91",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "119953720",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T11:30:02+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SVR.VSVR.AMD.STAND.C002.M008.G003",
+            "priceNo": "27525",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "productRatingType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC) Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "2",
+            "beforeContractProductSequence": "",
+            "productCode": "BST.CB.CB1.V001",
+            "priceNo": "24562",
+            "promiseNo": "",
+            "instanceNo": "120016333",
+            "productItemKind": {
+              "code": "BST",
+              "codeName": "Block storage"
+            },
+            "productRatingType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 107374182400,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "VSVR_BBST",
+              "codeName": "Server (VPC) Base Block Storage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913270",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "VSVR",
+              "codeName": "Server (VPC)"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "s19bbace8fcb",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "4",
+            "beforeContractProductSequence": "",
+            "productCode": "SPNET00000000015",
+            "priceNo": "28",
+            "promiseNo": "",
+            "instanceNo": "120016331",
+            "productItemKind": {
+              "code": "NET",
+              "codeName": "Network"
+            },
+            "productRatingType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "NETOT",
+              "codeName": "Network OUT"
+            },
+            "usageQuantity": 3147000,
+            "unit": {
+              "code": "USAGE_1BYTE",
+              "codeName": "Usage (1 Byte)"
+            },
+            "userUsageQuantity": 0.002931,
+            "userUnit": {
+              "code": "GBYTE",
+              "codeName": "GB"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913271",
+            "conjunctionContractNo": "21913270",
+            "contractType": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:40:59+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "ubuntu-24-64-server",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SW.VSVR.OS.LNX64.UBNTU.SVR24.G003",
+            "priceNo": "27466",
+            "promiseNo": "",
+            "instanceNo": "120016335",
+            "productItemKind": {
+              "code": "SW",
+              "codeName": "Software"
+            },
+            "productRatingType": {
+              "code": "SW",
+              "codeName": "Software OS License"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:40:59+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "SW",
+              "codeName": "Software OS License Run Usage"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        },
+        {
+          "account": {
+            "memberNo": "3649505"
+          },
+          "useDate": {
+            "useStartDate": "2026-01-21T00:00:00+0900",
+            "useEndDate": "2026-01-21T23:59:59+0900"
+          },
+          "contract": {
+            "contractNo": "21913294",
+            "conjunctionContractNo": "",
+            "contractType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "contractStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "contractStartDate": "2026-01-14T13:43:25+0900",
+            "contractEndDate": "2999-12-31T23:59:59+0900",
+            "instanceName": "175.106.97.16",
+            "regionCode": "KR",
+            "platformType": {
+              "code": "VPC",
+              "codeName": "VPC"
+            }
+          },
+          "contractProduct": {
+            "contractProductSequence": "1",
+            "beforeContractProductSequence": "",
+            "productCode": "SPPUBIP000000017",
+            "priceNo": "32",
+            "promiseNo": "",
+            "instanceNo": "120016608",
+            "productItemKind": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "productRatingType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "serviceStatus": {
+              "code": "NOML",
+              "codeName": "Normal"
+            },
+            "serviceStartDate": "2026-01-14T13:43:25+0900",
+            "serviceEndDate": "2999-12-31T23:59:59+0900",
+            "productSize": 0,
+            "productCount": 0
+          },
+          "usage": {
+            "meteringType": {
+              "code": "PBLIP",
+              "codeName": "Public IP"
+            },
+            "usageQuantity": 86400,
+            "unit": {
+              "code": "USAGE_SEC",
+              "codeName": "Usage time (per second)"
+            },
+            "userUsageQuantity": 24,
+            "userUnit": {
+              "code": "HOUR",
+              "codeName": "Hour(s)"
+            }
+          }
+        }
+      ],
+      "requestId": "33653903-3716-416e-96d4-262ac5f0f069",
+      "returnCode": "0",
+      "returnMessage": "success"
+    }
+  }
+}
