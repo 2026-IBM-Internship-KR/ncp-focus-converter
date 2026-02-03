@@ -209,18 +209,19 @@ Extract the actual service name from the contract path.
 ## Converting Solution
 ### Key Steps
 [A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#a-mapping-ncp-column-to-focus-format)<br/>
-[B. Requesting data from API | API에서 데이터 불러오기](#B-Requesting-data-from-API-|-API에서-데이터-불러오기)<br/>
-[C. Convert JSON to FOCUS format CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL))<br/>
-[D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3-|-AWS-S3에-업로드-하기)<br/>
-[E. Construct Pipeline | 파이프라인 구축](#E-Construct-Pipeline-|-파이프라인-구축)<br/>
-[F. Result on Cloudability | Cloudability에서의 결과](#F-Result-on-Cloudability-|-Cloudability에서의-결과)<br/>
+[B. Requesting data from API | API에서 데이터 불러오기](#B-Requesting-data-from-API)<br/>
+[C. Convert JSON to FOCUS format CSV(ETL) | JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL))<br/>
+[D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3)<br/>
+[E. Construct Pipeline | 파이프라인 구축](#E-Construct-Pipeline)<br/>
+[F. Result on Cloudability | Cloudability에서의 결과](#F-Result-on-Cloudability)<br/>
 * * *
-#### **A. Mapping NCP Column to FOCUS format
-#### FOCUS 형식으로 NCP 컬럼 매핑하기**
+#### **A. Mapping NCP Column to FOCUS format**
+#### **FOCUS 형식으로 NCP 컬럼 매핑하기**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.<br><br>
 >NCP 청구 API 필드에서 지원하지 않는 컬럼들이 존재하므로, 각각의 키의 뜻을 파악하고 가장 비슷한 FOCUS 컬럼에 매칭시켜서 매핑했습니다.
 * * *
-#### **B. Requesting data from API | API에서 데이터 불러오기**
+#### **B. Requesting data from API**
+#### **API에서 데이터 불러오기**
 >Retrieves billing data via the NCP Billing API and exports it to JSON and XMP formats. <br><br>
 >NCP 청구 API에서 청구 데이터를 받아서 JSON 또는 XMP 파일 형식으로 내보냅니다.
 
@@ -256,7 +257,8 @@ def get_account_name(member_no: str) -> str:
     return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
 * * *
-#### **C. Convert JSON to FOCUS format CSV(ETL) | JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)**
+#### **C. Convert JSON to FOCUS format CSV(ETL)**
+#### **JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)**
 >Since IBM Cloudability support FOCUS format csv, extracted JSON must be converted into FOCUS formatted CSV file.<br><br>
 >IBM Cloudability는 FOCUS 형식의 CSV를 지원하기에, 추출된 JSON은 FOCUS 형식의 CSV 파일로 변환 되어야 합니다.
 
@@ -303,7 +305,8 @@ df = df[map_list]
 df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
 ```
 * * *
-#### **D. Upload to AWS S3 | AWS S3에 업로드 하기**
+#### **D. Upload to AWS S3**
+#### **AWS S3에 업로드 하기**
 >Upload the converted CSV file to the AWS S3 bucket using Python to achieve the primary goal of migrating the NCP billing dataset.<br><br>
 >파이썬을 이용하여 AWS S3 버킷에 변환된 CSV 파일을 올림으로서 NCP 청구 데이터셋을 IBM Cloudability에 마이그레이션하려는 1차 목표를 달성합니다.
 
@@ -365,7 +368,8 @@ json_str = json.dumps(manifest, indent=2, ensure_ascii=False)
 client.put_object(Bucket=AWS_BUCKET_NAME, Key=manifest_s3_path, Body=json_str)
 ```
 * * *
-#### **E. Construct Pipeline | 파이프라인 구축**
+#### **E. Construct Pipeline**
+#### **파이프라인 구축**
 >This pipeline is designed to streamline the conversion, storage, and analysis of billing data.<br><br>
 >이 자동화 파이프라인은 청구 데이터의 변환, 저장, 분석을 간소화하기 위해 설계되었습니다.
 
@@ -418,4 +422,5 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 **The pipeline concludes by uploading manifest file to AWS S3.<br>**
 파이프라인은 manifest file을 AWS S3에 업로드 함으로서 마무리 됩니다.
 * * *
-#### **F. Result on Cloudability | Cloudability에서의 결과**
+#### **F. Result on Cloudability**
+#### **Cloudability에서의 결과**
