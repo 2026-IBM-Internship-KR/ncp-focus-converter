@@ -208,7 +208,7 @@ Extract the actual service name from the contract path.
 
 ## Converting Solution
 ### Key Steps
-[A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#A-Mapping-NCP-Column-to-FOCUS-format-|-FOCUS-형식으로-NCP-컬럼-매핑하기)<br/>
+[A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#a-mapping-ncp-column-to-focus-format-|-focus-형식으로-ncp-컬럼-매핑하기)<br/>
 [B. Requesting data from API | API에서 데이터 불러오기](#B-Requesting-data-from-API-|-API에서-데이터-불러오기)<br/>
 [C. Convert JSON to FOCUS format CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL))<br/>
 [D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3-|-AWS-S3에-업로드-하기)<br/>
