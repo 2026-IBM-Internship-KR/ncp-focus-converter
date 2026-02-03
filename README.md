@@ -208,12 +208,12 @@ Extract the actual service name from the contract path.
 
 ## Converting Solution
 ### Key Steps
-[A. Mapping NCP Column to FOCUS format](#A-Mapping-NCP-Column-to-FOCUS-format)<br/>
-[B. Requesting data from API](#B-Requesting-data-from-API)<br/>
-[C. Convert JSON to FOCUS format CSV(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL))<br/>
-[D. Upload to AWS S3](#D-Upload-to-AWS-S3)<br/>
-[E. Construct Pipeline](#E-Construct-Pipeline)<br/>
-[F. Test on Cloudability](#F-Test-on-Cloudability)<br/>
+[A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#A-Mapping-NCP-Column-to-FOCUS-format-|-FOCUS-형식으로-NCP-컬럼-매핑하기)<br/>
+[B. Requesting data from API | API에서 데이터 불러오기](#B-Requesting-data-from-API-|-API에서-데이터-불러오기)<br/>
+[C. Convert JSON to FOCUS format CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL))<br/>
+[D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3-|-AWS-S3에-업로드-하기)<br/>
+[E. Construct Pipeline | 파이프라인 구축](#E-Construct-Pipeline-|-파이프라인-구축)<br/>
+[F. Result on Cloudability | Cloudability에서의 결과](#F-Result-on-Cloudability-|-Cloudability에서의-결과)<br/>
 * * *
 #### **A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.<br><br>
@@ -364,7 +364,7 @@ json_str = json.dumps(manifest, indent=2, ensure_ascii=False)
 client.put_object(Bucket=AWS_BUCKET_NAME, Key=manifest_s3_path, Body=json_str)
 ```
 * * *
-#### **E. Construct Pipeline**
+#### **E. Construct Pipeline | 파이프라인 구축**
 >This pipeline is designed to streamline the conversion, storage, and analysis of billing data.<br><br>
 >이 자동화 파이프라인은 청구 데이터의 변환, 저장, 분석을 간소화하기 위해 설계되었습니다.
 
@@ -417,4 +417,4 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 **The pipeline concludes by uploading manifest file to AWS S3.<br>**
 파이프라인은 manifest file을 AWS S3에 업로드 함으로서 마무리 됩니다.
 * * *
-#### **F. Test on Cloudability**
+#### **F. Result on Cloudability | Cloudability에서의 결과**
