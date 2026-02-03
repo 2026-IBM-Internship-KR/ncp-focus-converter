@@ -208,14 +208,15 @@ Extract the actual service name from the contract path.
 
 ## Converting Solution
 ### Key Steps
-[A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#a-mapping-ncp-column-to-focus-format-|-focus-형식으로-ncp-컬럼-매핑하기)<br/>
+[A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#a-mapping-ncp-column-to-focus-format)<br/>
 [B. Requesting data from API | API에서 데이터 불러오기](#B-Requesting-data-from-API-|-API에서-데이터-불러오기)<br/>
 [C. Convert JSON to FOCUS format CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL)-|-JSON을-FOCUS-형식의-CSV-파일로-변환(ETL))<br/>
 [D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3-|-AWS-S3에-업로드-하기)<br/>
 [E. Construct Pipeline | 파이프라인 구축](#E-Construct-Pipeline-|-파이프라인-구축)<br/>
 [F. Result on Cloudability | Cloudability에서의 결과](#F-Result-on-Cloudability-|-Cloudability에서의-결과)<br/>
 * * *
-#### **A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기**
+#### **A. Mapping NCP Column to FOCUS format
+#### FOCUS 형식으로 NCP 컬럼 매핑하기**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.<br><br>
 >NCP 청구 API 필드에서 지원하지 않는 컬럼들이 존재하므로, 각각의 키의 뜻을 파악하고 가장 비슷한 FOCUS 컬럼에 매칭시켜서 매핑했습니다.
 * * *
