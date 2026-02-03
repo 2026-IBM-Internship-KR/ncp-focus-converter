@@ -215,13 +215,17 @@ Extract the actual service name from the contract path.
 [E. Construct Pipeline](#E-Construct-Pipeline)<br/>
 [F. Test on Cloudability](#F-Test-on-Cloudability)<br/>
 * * *
-#### **A. Mapping NCP Column to FOCUS format**
+#### **A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기**
 >Since explicit definitions for NCP's billing API fields are unavailable, we inferred the meaning of each key and mapped them to the most semantically similar FOCUS columns.
+>NCP 청구 API 필드에서 지원하지 않는 컬럼들이 존재하므로, 각각의 키의 뜻을 파악하고 가장 비슷한 FOCUS 컬럼에 매칭시켜서 매핑했습니다.
 * * *
-#### **B. Requesting data from API**
+#### **B. Requesting data from API | API에서 데이터 불러오기**
 >Retrieves billing data via the NCP Billing API and exports it to JSON and XMP formats. 
+>NCP 청구 API에서 청구 데이터를 받아서 JSON 또는 XMP 파일 형식으로 내보냅니다.
 
 Static values are injected into the code to account for specific data fields that are not provided by the API.
+
+API에서 제공되지 않는 데이터는 고정값으로 코드에 입력해두었습니다.
 
 
 ```python
@@ -234,22 +238,30 @@ ACCOUNT_NAME_MAP = {
 
 The 'Account Name' can be manually injected into the dictionary as a static value.
 
+Account Name은 딕셔너리를 이용해서 수동으로 고정값의 형식으로 추가 입력 가능합니다.
+
 ```python
 PROVIDER_NAME = "Naver Cloud Platform"
 INVOICE_ISSUER_NAME = "NAVER Cloud Corp."
 PUBLISHER_NAME = "NAVER Cloud Platform"
 ```
 
-Added name values as a static value.
+NCP Billing API does not provides name values, so we added name values as a static value too.
+
+NCP API에서 Name 값을 제공하지 않기 때문에 다양한 Name 또한 고정값으로 넣어두었습니다.
 
 ```python
 def get_account_name(member_no: str) -> str:
     return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
 * * *
-#### **C. Convert JSON to FOCUS format CSV(ETL)**
->To convert JSON to FOCUS format CSV, importing pandas and json package is necessary.
+#### **C. Convert JSON to FOCUS format CSV(ETL) | JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)**
+>Since IBM Cloudability support FOCUS format csv, extracted JSON must be converted into FOCUS formatted CSV file.
+>IBM Cloudability는 FOCUS 형식의 CSV를 지원하기에, 추출된 JSON은 FOCUS 형식의 CSV 파일로 변환 되어야 합니다.
 
+To convert JSON to FOCUS format CSV, importing pandas and json package is necessary. 
+
+JSON을 FOCUS 형식의 CSV로 변환하기 위해선, pandas와 json 패키지를 무조건 불러와야합니다.
 
 ```python
 import pandas as pd
@@ -258,12 +270,16 @@ import json
 
 Import JSON data
 
+JSON 데이터 불러오기
+
 ```python
 with open(filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
 ```
 
 Since some data required normalization, added code to normalize it.
+
+몇몇 데이터는 일반화를 필요로 하므로, 데이터를 일반화하는 코드를 추가합니다.
 
 ```python
 # Example
@@ -272,6 +288,8 @@ df_billing = pd.json_normalize(billing_list)
 ```
 
 As a final step, use to_csv to convert the JSON file to CSV format.
+
+마지막으로, to_csv를 이용하여 JSON 파일을 CSV 형식으로 변환합니다.
 
 ```python
 map_list = [
@@ -284,11 +302,14 @@ df = df[map_list]
 df.to_csv('ncp_focus_format.csv', index=False, encoding='utf-8')
 ```
 * * *
-#### **D. Upload to AWS S3**
+#### **D. Upload to AWS S3 | AWS S3에 업로드 하기**
 >Upload the converted CSV file to the AWS S3 bucket using Python to achieve the primary goal of migrating the NCP billing dataset.
+>파이썬을 이용하여 AWS S3 버킷에 변환된 CSV 파일을 올림으로서 NCP 청구 데이터셋을 IBM Cloudability에 마이그레이션하려는 1차 목표를 달성합니다.
 
 
 To upload files to AWS S3 using Python, you must import boto3, the standard AWS SDK for Python.
+
+파이썬을 이용해 AWS S3에 파일을 업로드 하려면, 파이썬용 AWS SDK인 boto3를 불러와야 합니다.
 
 ```python
 import boto3
@@ -308,11 +329,15 @@ session = boto3.Session(
 
 Upload processed data to AWS bucket.
 
+AWS 버킷에 가공된 데이터를 업로드 합니다.
+
 ```python
 client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 ```
 
-Generates a metadata manifest to prepare for future Cloudability integration, ensuring the system is ready for automated ingestion.
+Generate a metadata manifest to prepare for future Cloudability integration, ensuring the system is ready for automated ingestion.
+
+차후 자동화 생성 시스템을 구성하여 Cloudability와의 연동을 진행하기 위해 메타데이터 매니페스트를 생성합니다.
 
 ```python
 manifest = {
@@ -329,6 +354,10 @@ manifest = {
 
 Upload Manifest.json to AWS S3
 
+AWS S3에 Manifest.json을 업로드 합니다.
+
+
+
 ```python
 manifest_s3_path = f"manifests/{filenamemonth}/Manifest.json"
 json_str = json.dumps(manifest, indent=2, ensure_ascii=False)
@@ -337,8 +366,11 @@ client.put_object(Bucket=AWS_BUCKET_NAME, Key=manifest_s3_path, Body=json_str)
 * * *
 #### **E. Construct Pipeline**
 >This pipeline is designed to streamline the conversion, storage, and analysis of billing data.
+>이 자동화 파이프라인은 청구 데이터의 변환, 저장, 분석을 간소화하기 위해 설계되었습니다.
 
 Encapsulated the column renaming and CSV conversion logic in etl.py into a single function.
+
+컬럼 이름 재설정과 CSV 변환 코드를 etl.py에 캡슐화하여 하나의 함수로 만들었습니다.
 
 ```python
 def cenvert_focus(filename):
@@ -351,6 +383,8 @@ def cenvert_focus(filename):
 
 Import encapsulated functions(including test_api2.py) into the main Python script.
 
+캡슐화된 기능들을 메인으로 사용할 파이썬 스크립트에 불러옵니다.
+
 ```python
 import etl
 import test_api2
@@ -359,12 +393,16 @@ import test_api2
 
 The pipeline generates both raw data and the FOCUS-converted CSV in a single line of code using encapsulated functions.
 
+파이프라인은 캡슐화된 함수들을 이용하여 raw data 생성과 FOCUS 형식으로 변환된 CSV 생성을 단 한줄의 코드로 가능하게 합니다.
+
 ```python
 test_api2.rawdata(focus_startmonth,focus_endmonth,focus_startdate, focus_enddate)
 etl.cenvert_focus('raw_ncp_data.json')
 ```
 
 Upload both the converted dataset and raw data file to AWS S3.
+
+변환된 데이터셋과 raw data 파일을 AWS S3에 업로드합니다.
 
 ```python
 # raw data upload
@@ -377,5 +415,6 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 ```
 
 The pipeline concludes by uploading manifest file to AWS S3.
+파이프라인은 manifest file을 AWS S3에 업로드 함으로서 마무리 됩니다.
 * * *
 #### **F. Test on Cloudability**
