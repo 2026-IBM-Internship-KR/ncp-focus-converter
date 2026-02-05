@@ -210,7 +210,8 @@ Extract the actual service name from the contract path.
 ### Key Steps
 [A. Mapping NCP Column to FOCUS format | FOCUS 형식으로 NCP 컬럼 매핑하기](#a-mapping-ncp-column-to-focus-format)<br/>
 [B. Requesting data from API | API에서 데이터 불러오기](#B-Requesting-data-from-API)<br/>
-[C. Convert JSON to FOCUS format CSV(ETL) | JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV(ETL))<br/>
+[C. Convert JSON to FOCUS format CSV(ETL) | JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)](#C-Convert-JSON-to-FOCUS-format-CSV)<br/>
+C. Convert JSON to FOCUS format CSV(ETL)
 [D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3)<br/>
 [E. Construct Pipeline | 파이프라인 구축](#E-Construct-Pipeline)<br/>
 [F. Result on Cloudability | Cloudability에서의 결과](#F-Result-on-Cloudability)<br/>
@@ -257,7 +258,7 @@ def get_account_name(member_no: str) -> str:
     return ACCOUNT_NAME_MAP.get(member_no, f"Account-{member_no}")
 ```
 * * *
-#### **C. Convert JSON to FOCUS format CSV(ETL)**
+#### **C. Convert JSON to FOCUS format CSV**
 #### **JSON을 FOCUS 형식의 CSV 파일로 변환(ETL)**
 >Since IBM Cloudability support FOCUS format csv, extracted JSON must be converted into FOCUS formatted CSV file.<br><br>
 >IBM Cloudability는 FOCUS 형식의 CSV를 지원하기에, 추출된 JSON은 FOCUS 형식의 CSV 파일로 변환 되어야 합니다.
@@ -440,5 +441,7 @@ NCP 원천 데이터의 청구 범주 세분화 수준이 FOCUS 표준 규격에
 
 >The source data is in KRW, but it is displayed in USD on the platform. This seems to be an automatic conversion by Cloudability's default settings. We need to check if we can change the settings to show KRW.<br><br>
 >입력 데이터의 통화 단위(KRW)와 플랫폼 상의 표기 단위(USD) 간의 통화 불일치 현상이 확인됨. 이는 Cloudability 플랫폼의 기본 통화 설정에 의한 자동 환산 결과로 판단되며, 원화 표기 지원 여부에 대한 추가적인 환경 설정 검토가 필요해 보임
-<br>
+<br><br>
+
+<img width="1431" height="309" alt="Image" src="https://github.com/user-attachments/assets/05cccfab-1673-46d0-b022-3c2ac4c40aca" /><br><br>
 
