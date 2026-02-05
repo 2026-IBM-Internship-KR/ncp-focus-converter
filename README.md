@@ -424,3 +424,9 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 * * *
 #### **F. Result on Cloudability**
 #### **Cloudability에서의 결과**
+>Ensure that the extracted data is correctly ingested and mapped within IBM Cloudability.<br><br>
+>추출된 데이터가 IBM Cloudability에서 제대로 수입되고 매핑되었는지 확인
+
+<img width="2920" height="1228" alt="Image" src="https://github.com/user-attachments/assets/2bfb80af-2028-4589-a5fd-54159bbe7595" />
+
+
