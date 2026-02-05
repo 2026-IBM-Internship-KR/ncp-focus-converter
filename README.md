@@ -429,14 +429,14 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 >추출된 데이터가 IBM Cloudability에서 제대로 수입되고 매핑되었는지 확인
 
 <img width="2920" height="1228" alt="Image" src="https://github.com/user-attachments/assets/2bfb80af-2028-4589-a5fd-54159bbe7595" />
-<br>
+<br><br>
 
 **The lack of detailed billing categories in NCP's source data caused double-counting issues for identical resources when aligning with the FOCUS specification.<br>**
 
 NCP 원천 데이터의 청구 범주 세분화 수준이 FOCUS 표준 규격에 미치지 못함에 따라, 데이터 매핑 과정에서 동일 리소스에 대한 비용 중복 계상 오류가 발생함
 
-<img width="1414" height="598" alt="Image" src="https://github.com/user-attachments/assets/6f949645-e14a-4ec6-9294-c3c2cea9744d" />
-<br>
+<img width="1414" height="598" alt="Image" src="https://github.com/user-attachments/assets/470bfe0e-cd74-49b3-ad28-48039b9acb0b" />
+<br><br>
 
 >The source data is in KRW, but it is displayed in USD on the platform. This seems to be an automatic conversion by Cloudability's default settings. We need to check if we can change the settings to show KRW.<br><br>
 >입력 데이터의 통화 단위(KRW)와 플랫폼 상의 표기 단위(USD) 간의 통화 불일치 현상이 확인됨. 이는 Cloudability 플랫폼의 기본 통화 설정에 의한 자동 환산 결과로 판단되며, 원화 표기 지원 여부에 대한 추가적인 환경 설정 검토가 필요해 보임
