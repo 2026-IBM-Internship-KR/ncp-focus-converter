@@ -495,4 +495,6 @@ NCP에서 과금항목그룹을 3가지 밖에 제공하지 않음. 세부 정�
 #### **Conclusion<br>**
 #### **결론<br>**
 >While the data ingestion into Cloudability was successful, the next steps should focus on tag-based cost segmentation and data normalization to prevent data overlapping.<br><br>
->Cloudability에서의 data ingestion은 성공적으로 진행되었지만, 태그 기반의 비용 세분화와 중복 합산 방지를 위한 데이터 정규화가 다음 단계로 필요해 보임.
+>Cloudability에서의 data ingestion은 성공적으로 진행되었지만, 태그 기반의 비용 세분화와 중복 합산 방지를 위한 데이터 정규화가 다음 단계로 필요해 보임.<br><br>
+<img width="5877" height="2472" alt="Image" src="https://github.com/user-attachments/assets/106fc66a-aad3-4b01-a3de-18f790466b3d" />
+> Ideal result | 이상적인 결과
