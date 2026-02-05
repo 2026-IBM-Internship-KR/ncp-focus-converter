@@ -215,6 +215,7 @@ C. Convert JSON to FOCUS format CSV(ETL)
 [D. Upload to AWS S3 | AWS S3에 업로드 하기](#D-Upload-to-AWS-S3)<br/>
 [E. Construct Pipeline | 파이프라인 구축](#E-Construct-Pipeline)<br/>
 [F. Result on Cloudability | Cloudability에서의 결과](#F-Result-on-Cloudability)<br/>
+[G. Key Challenges | 주요 과제](#g-key-challenges)<br/>
 * * *
 #### **A. Mapping NCP Column to FOCUS format**
 #### **FOCUS 형식으로 NCP 컬럼 매핑하기**
@@ -428,20 +429,70 @@ client.upload_file('ncp_focus_format.csv',AWS_BUCKET_NAME,csv_s3_path)
 #### **Cloudability에서의 결과**
 >Ensure that the extracted data is correctly ingested and mapped within IBM Cloudability.<br><br>
 >추출된 데이터가 IBM Cloudability에서 제대로 수입되고 매핑되었는지 확인
+<br>
+##### **Info from Cloudability**<br>
+
+1. Description
+>The information for Service Name, Item Description, and Raw Currency Code is clearly presented.<br><br>
+>Serviced Name, Item Description, Raw Currency Code의 정보가 명확하게 표현됨.
+2. Graph
+>The 'Spend By NCP' pie chart makes it easy to see how much of the total cost each service takes up.<br><br>
+>Spend By NCP 원형 그래프가 발생한 비용에서 각 서비스가 차지하는 비율을 명확하게 표시, 표현해줌.
+3. Resource Usage Ranking
+>The data shows that the top resource users are Server(VPC), Public IP, Software, and VPC, in that order.<br><br>
+>NCP 서비스에서 Server(VPC), Public IP, Software, VPC 순으로 자원 이용을 많이 하는게 보여짐
+4. Data measurement cycle
+>Charges are presented based on daily measurement cycles, providing clear visibility into the billing process.<br><br>
+>일별 데이터로 측정되어 요금이 어떻게 청구되었는지 보여짐
+5. Data range
+>It shows that the billing data covers the entire month of January.<br><br>
+>1월 한달 분의 데이터임이 드러남
 
 <img width="2920" height="1228" alt="Image" src="https://github.com/user-attachments/assets/2bfb80af-2028-4589-a5fd-54159bbe7595" />
 <br><br>
 
-**The lack of detailed billing categories in NCP's source data caused double-counting issues for identical resources when aligning with the FOCUS specification.<br>**
+#### **G. Key Challenges<br>**
+#### **핵심 과제<br>**
+
+##### **Issue 1**
+**The lack of detailed billing categories in NCP's source data caused overlapping issues for identical resources when aligning with the FOCUS specification.<br>**
 
 NCP 원천 데이터의 청구 범주 세분화 수준이 FOCUS 표준 규격에 미치지 못함에 따라, 데이터 매핑 과정에서 동일 리소스에 대한 비용 중복 계상 오류가 발생함
 
-<img width="1414" height="598" alt="Image" src="https://github.com/user-attachments/assets/470bfe0e-cd74-49b3-ad28-48039b9acb0b" />
+<img width="1414" height="598" alt="Image" src="https://github.com/user-attachments/assets/2814b61a-2429-445f-8bd4-f49687a45842" />
 <br><br>
 
->The source data is in KRW, but it is displayed in USD on the platform. This seems to be an automatic conversion by Cloudability's default settings. We need to check if we can change the settings to show KRW.<br><br>
->입력 데이터의 통화 단위(KRW)와 플랫폼 상의 표기 단위(USD) 간의 통화 불일치 현상이 확인됨. 이는 Cloudability 플랫폼의 기본 통화 설정에 의한 자동 환산 결과로 판단되며, 원화 표기 지원 여부에 대한 추가적인 환경 설정 검토가 필요해 보임
-<br><br>
+##### **Issue 2**
+**The source data is in KRW, but it is displayed in USD on the platform. This seems to be an automatic conversion by Cloudability's default settings. We need to check if we can change the settings to show KRW.<br>**
+
+입력 데이터의 통화 단위(KRW)와 플랫폼 상의 표기 단위(USD) 간의 통화 불일치 현상이 확인됨. 이는 Cloudability 플랫폼의 기본 통화 설정에 의한 자동 환산 결과로 판단되며, 원화 표기 지원 여부에 대한 추가적인 환경 설정 검토가 필요해 보임
+<br>
+
+##### **Issue 3** 
+**Total costs are currently distorted due to overlapping data mapping. Certain items are being reflected in multiple categories, causing the total to be higher than the actual billing.<br>**
+
+데이터 매핑 과정에서의 중복 계상 이슈로 인해 전체 비용(Total Cost) 산출의 왜곡이 발생함. 이는 특정 항목이 복수의 범주에 중복 반영된 결과로, 실제 청구액 대비 합산 수치가 과다하게 집계되는 오차가 확인됨.
+<br>
 
 <img width="1431" height="309" alt="Image" src="https://github.com/user-attachments/assets/05cccfab-1673-46d0-b022-3c2ac4c40aca" /><br><br>
 
+##### **Issue 4**
+**Without tags, FinOps Operator cannot clearly assign costs, which makes it hard to set targets for cost saving. It is also difficult to stop wasting resources because the operator can't identify exactly where the unnecessary costs are coming from.<br>**
+
+태그 정보의 결여는 비용 배분의 불명확성을 초래하여, 실질적인 비용 효율화 지표 수립을 어렵게 만듬. 특히, 어떤 자원에서 불필요한 비용이 발생하는지 추적할 수 없어 리소스 낭비를 방지하기 어려움.
+<br>
+
+##### **Issue 4A**
+**NCP only offers three billing groups, so it’s hard to break down costs in detail. Even if we add more info, we can’t reach the level of detail that FOCUS standards require.<br>**
+
+NCP에서 과금항목그룹을 3가지 밖에 제공하지 않음. 세부 정보를 입력한다 해도 FOCUS 표준 만큼의 비용 세분화는 어려워보임
+<br>
+
+
+<img width="1073" height="583" alt="Image" src="https://github.com/user-attachments/assets/62c6b225-7637-472f-a660-e616e79afcac" />
+<br><br>
+
+#### **Conclusion<br>**
+#### **결론<br>**
+>While the data ingestion into Cloudability was successful, the next steps should focus on tag-based cost segmentation and data normalization to prevent data overlapping.<br><br>
+>Cloudability에서의 data ingestion은 성공적으로 진행되었지만, 태그 기반의 비용 세분화와 중복 합산 방지를 위한 데이터 정규화가 다음 단계로 필요해 보임.
